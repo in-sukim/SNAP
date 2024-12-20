@@ -49,4 +49,4 @@ COPY --from=builder /build .
 EXPOSE 8000
 
 # Command to run the application
-CMD ["python", "pipeline.py"]
+CMD ["python", "-m", "src.pipeline.pipeline.py"]

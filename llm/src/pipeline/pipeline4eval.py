@@ -4,11 +4,14 @@ import librosa
 import json
 import re
 import os
-from settings import *
-from youtube2audio import downloadYouTubeVideo, convertVideo2Audio
-from text2summ import *
-from audio2text import convertAudio2Text
-from utils import scores, videoUtils, audioUtils, domainFlow, llmUtils
+from llm.src.common.settings import *
+from llm.src.audio.youtube2audio import downloadYouTubeVideo, convertVideo2Audio
+from llm.src.text.text2summ import *
+from llm.src.audio.audio2text import convertAudio2Text
+from llm.src.utils.audio import audioUtils
+from llm.src.utils.text import domainFlow, llmUtils
+from llm.src.utils.video import videoUtils
+from llm.src.utils.text import scores
 from contextlib import contextmanager
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity

@@ -1,10 +1,11 @@
 from datasets import load_dataset
 import pandas as pd
+from llm.src.utils.text import scores
 from rouge import Rouge
 from openai import OpenAI
 import json
-from settings import *
-from utils import preprocess, prompts, scores, utils
+from llm.src.common.settings import *
+from utils import preprocess, prompts, utils
 import os 
 
 from langchain.llms import OpenAI, HuggingFaceHub

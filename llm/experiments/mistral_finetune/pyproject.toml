@@ -1,0 +1,43 @@
+[tool.poetry]
+name = "llm-tuning"
+version = "0.1.0"
+description = ""
+authors = ["None"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.8.1,<4.0"
+librosa = "0.10.1"
+torch = { version = "2.1.2+cu121", source = "pytorch" } 
+
+soundfile = "0.12.1"
+langchain = "*"
+moviepy = "1.0.3"
+spacy = "3.4.3"
+pandas = "2.0.3"
+scikit-learn = "1.3.2"
+tiktoken = "0.6.0"
+rouge-score = "0.1.2"
+pytube = "15.0.0"
+langchain_community = "0.0.28"
+matplotlib = "3.7.5" 
+rouge = "1.0.1"
+pymysql = "1.1.0"
+yt-dlp = "^2024.3.10"
+certifi = "2024.2.2"
+bitsandbytes = "0.43.0"
+datasets = "2.18.0"
+
+transformers = { git = "https://github.com/huggingface/transformers.git" }
+accelerate = { git = "https://github.com/huggingface/accelerate.git" }
+peft = { git = "https://github.com/huggingface/peft.git" }
+trl = { git = "https://github.com/huggingface/trl.git"}
+
+[[tool.poetry.source]]
+name = "pytorch"
+url = "https://download.pytorch.org/whl/cu121/"
+secondary = true
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
