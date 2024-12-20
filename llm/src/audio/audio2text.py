@@ -8,8 +8,8 @@ import json
 import gc
 import torch
 
-from utils import audioUtils
-from settings import *
+from llm.src.utils.audio import audioUtils
+from llm.src.common.settings import *
 
 MODEL_DICT = {
     'wav2vec': 'facebook/wav2vec2-base-960h', 

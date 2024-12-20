@@ -1,6 +1,6 @@
 from rouge import Rouge
 import pandas as pd
-from settings import *
+from llm.src.common.settings import *
 import numpy as np
 from tqdm import tqdm
 from rouge_score import rouge_scorer
